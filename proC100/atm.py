@@ -9,7 +9,7 @@ class Atm(object):
     def withdrawal(self, amount):
         newAmount = int(self.balance) - amount
         print ("remaining balance: " +  str(newAmount))
-    def balance(self):
+    def checkBalance(self):
         balance = self.balance
         print("Rs." + " " +  " " +  "balance is available")
 
@@ -21,7 +21,7 @@ def main():
     print("1: balance, 2: wthdrawal")
     activity = int(input("enter the activity number: "))
     if activity == 1: 
-        newUser.balance()
+        newUser.checkBalance()
     elif activity == 2: 
         amount = int(input("enter the amount to be withdrawed: "))
         newUser.withdrawal(amount)
